@@ -9,3 +9,11 @@ In your terminal, execute this command line
 ``` bash
     pip install -r requirements.txt
 ```
+
+<br>
+
+### In terminal production
+
+``` bash
+    pm2 start "file_name" --name "name" 
+```
