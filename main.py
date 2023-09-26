@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 url = 'https://accounts.mybackstage.globo.com/token'
-api_url = 'https://api-afiliadas.mybackstage.globo.com/afiliadas/relatorio/spotnet/exibidora?pagesize=400&pagenumber=1&dataCompetenciaInicio=2023/06/01&dataCompetenciaFim=2023/06/30'
+api_url = 'https://api-afiliadas.mybackstage.globo.com/afiliadas/relatorio/spotnet/exibidora?pagesize=400&pagenumber=1&dataCompetenciaInicio=2023/06/01&dataCompetenciaFim=2024/12/31'
 client_id = '7iBj3LfAGq12FCh5bcEySw=='
 client_secret = 'OoWu14zKE53WOXcYiCopcA=='
 
