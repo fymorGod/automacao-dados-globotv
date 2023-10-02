@@ -36,7 +36,7 @@ def get_data():
 
         api_response = requests.get(api_url, headers=headers, data=payload)
         api_data = api_response.json()
-    
+        print(api_data)
         return jsonify(api_data)
     else:
         return jsonify({'error': 'Unable to get access token'})

@@ -8,7 +8,7 @@ def job():
 
   # Caminho para o arquivo JSON
   file_name  = "response.json"
-  directory_path = "//bonn/Datasets/auxiliar SISCOM/"
+  directory_path = "C:\DataSets\Auxiliar SISCOM"
   file_path = f"{directory_path}/{file_name}"
 
   apí_url = 'http://127.0.0.1:5000/get_data'
