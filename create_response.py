@@ -8,10 +8,10 @@ def job():
 
   # Caminho para o arquivo JSON
   file_name  = "response.json"
-  directory_path = "C:\DataSets\Auxiliar SISCOM"
+  directory_path = "E:\Bonn\Fontes de Dados\SISCOM"
   file_path = f"{directory_path}/{file_name}"
 
-  apí_url = 'http://127.0.0.1:5000/get_data'
+  apí_url = 'http://127.0.0.1:5004/get_data'
   response = requests.post(apí_url)
 
   if response.status_code == 200:
@@ -23,8 +23,11 @@ def job():
   else:
       print(f"Erro ao consumir a API: {response.status_code}")
 
-schedule.every().day.at("08:00").do(job)
-
+schedule.every().day.at("07:10").do(job)
+schedule.every().day.at("09:16").do(job)
+schedule.every().day.at("11:00").do(job)
+schedule.every().day.at("12:00").do(job)
+schedule.every().day.at("16:22").do(job)
 while  True:
     schedule.run_pending()
     tm.sleep(1)
