@@ -31,15 +31,9 @@ def get_data():
                  'Authorization': f'Bearer {access_token}'
             }
             
-            payload = {
-                'grant_type': 'client_credentials',
-            }
-
-            api_response = requests.get(api_url, headers=headers, data=payload)
+            api_response = requests.get(api_url, headers=headers)
             api_data = api_response.json()
-            print("GLOBO")
-            print(api_data)
-            return jsonify(api_data) 
+            return api_data  
         else:
             return jsonify({'error': 'Unable to get access token'})
     except Exception as e:
